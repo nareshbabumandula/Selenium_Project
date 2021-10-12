@@ -24,7 +24,6 @@ public class DataTypes {
 		System.out.println("Float value of f is : "+f);
 		System.out.println("Double value of d is : "+d);
 		System.out.println("Boolean value of bflag is : "+bflag);
-		
 	}
 
 }
