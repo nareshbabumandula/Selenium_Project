@@ -47,7 +47,7 @@ public class DataTypes {
 		System.out.println("Size allocated for Short container is : " + Short.SIZE + " bits");
 		System.out.println("Min value of long is : "+ Long.MIN_VALUE);
 		System.out.println("Max value of long is : "+ Long.MAX_VALUE);
-		
+		System.out.println("Size allocated for long container is : " + Long.SIZE + " bits");
 	}
 
 }
