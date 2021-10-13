@@ -41,8 +41,11 @@ public class DataTypes {
 		//Wrapper classes - Pre-defined java classes for all the primitive datatypes exists
 		System.out.println("Min value of byte is : "+ Byte.MIN_VALUE);
 		System.out.println("Max value of byte is : "+ Byte.MAX_VALUE);
-	
-
+		System.out.println("Size allocated for Byte container is : " + Byte.SIZE + " bits");
+		System.out.println("Min value of short is : "+ Short.MIN_VALUE);
+		System.out.println("Max value of short is : "+ Short.MAX_VALUE);
+		System.out.println("Size allocated for Short container is : " + Short.SIZE + " bits");
+		
 	}
 
 }
