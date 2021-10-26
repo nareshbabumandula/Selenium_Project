@@ -3,7 +3,7 @@ package com.java.basics;
 public class StringTest {
 
 	public static void main(String[] args) {
-				
+					
 		String sText1 = "hello";
 		String sText2 = "WORLD";
 		String sText3 = "            welcome to core java training            ";
@@ -35,6 +35,51 @@ public class StringTest {
 		System.out.println(sText5.substring(10));
 		System.out.println(sText5.substring(0, 5));
 		System.out.println(sText3.replace("java", "J2SE"));
+		
+		// Split the string based on the delimiter
+		String strText = "hello world this is core java online training";
+		String[] asText=strText.split(" ");
+		System.out.println(asText.length);
+		System.out.println(asText[0]);
+		System.out.println(asText[1]);
+		//System.out.println(asText[10]); // Exception: ArrayIndexOutOfBoundsException
+		System.out.println("For loop started..!");
+		for (int i = 0; i < asText.length; i++) {
+			System.out.println(asText[i]);
+		}
+		
+		System.out.println("For loop with a temporary variable started..!");
+		for (int i = 0; i < asText.length; i++) {
+			String value = asText[i];
+			System.out.println(value);
+			
+		}
+		
+		System.out.println("For each or enhanced for loop");
+		for (String item : asText) {
+			System.out.println(item);
+		}
+				
+		System.out.println(strText.join(">", asText));
+		System.out.println(sText1.hashCode());
+		System.out.println(sText2.hashCode());
+		sText1="hi"; // Assign new string
+		System.out.println(sText1.hashCode());
+		System.out.println(sText1.getBytes());
+		System.out.println(sText1.getClass());
+		
+		StringBuffer sb = new StringBuffer("Hello");
+		System.out.println(sb.hashCode());
+		sb.append("world");
+		System.out.println(sb.hashCode());
+		System.out.println(sb);
+
+		System.out.println(StringTest.class);
+				
+		int[] marks= {40,10,50,70,60};
+		String[] students= {"sandeep","arun","Sheshu","sheenu","ravi", "swetha"};
+		System.out.println(marks.length);
+		System.out.println(students.length);
 		
 	}
 
