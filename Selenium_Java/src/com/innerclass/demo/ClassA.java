@@ -3,9 +3,9 @@ package com.innerclass.demo;
 public class ClassA {
 	
 	//Inner Class
-	class ClassB{
+	private class ClassB{
 		
-		void display() {
+		private void display() {
 			System.out.println("Display method of inner class");
 		}
 		

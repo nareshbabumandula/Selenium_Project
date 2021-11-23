@@ -25,7 +25,7 @@ public class DataTypes {
 		System.out.println("Double value of d is : "+d);
 		System.out.println("Boolean value of bflag is : "+bflag);
 		
-		//Type casting: Converting is nothing converting one type of primitive data into another primitive type
+		//Type casting: It is nothing but converting one type of primitive data into another primitive type
 		// Widening/Automation conversion: Converting the smaller datatype to the bigger datatype
 		//e.g. byte->short->int->long->float->double
 		byte b1=125;
