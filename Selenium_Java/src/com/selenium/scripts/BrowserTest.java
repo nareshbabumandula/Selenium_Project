@@ -36,7 +36,9 @@ public class BrowserTest {
 
 	public static void main(String[] args) throws InterruptedException {
 		BrowserTest bt = new BrowserTest();
-		bt.launchBrowser("ie");
+		bt.launchBrowser("firefox");
+		//BrowserTest bt = new BrowserTest();
+		//bt.launchBrowser("ie");
 
 	}
 
