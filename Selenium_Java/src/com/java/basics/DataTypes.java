@@ -7,7 +7,7 @@ public class DataTypes {
 		// Primitive data types
 		// Always use Ctrl+Spacebar for completing the syntax
 		// Run the Java Application - Click on Run button in toolbar/Right on Source Code->Run As->Java Application/Ctrl+F11
-		byte b=112;
+		byte b=127;
 		short s=2145;
 		int i=434636;
 		long l=366784;
@@ -15,7 +15,7 @@ public class DataTypes {
 		double d=436.756;
 		char c='t';
 		boolean bflag=true;
-		
+	
 		System.out.println("Byte value of b is : " +b);
 		System.out.println("Short value of s is : " +s);
 		System.out.println("Integer value of i is : "+i);

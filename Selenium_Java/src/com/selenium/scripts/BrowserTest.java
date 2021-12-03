@@ -1,5 +1,6 @@
 package com.selenium.scripts;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -30,13 +31,14 @@ public class BrowserTest {
 			break;
 		}
 		driver.get("https://www.mycontactform.com/");
+		driver.findElement(By.id("user")).sendKeys("naresh");
 		Thread.sleep(3000);
 		driver.quit(); // Terminate the browser
 	}
 
 	public static void main(String[] args) throws InterruptedException {
 		BrowserTest bt = new BrowserTest();
-		bt.launchBrowser("ie");
+		bt.launchBrowser("chrome");
 
 	}
 
