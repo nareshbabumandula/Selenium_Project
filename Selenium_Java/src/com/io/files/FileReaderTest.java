@@ -11,7 +11,20 @@ public class FileReaderTest {
 		boolean bFlag=false;
 
 		try {
-			File file = new File("./files/Data.txt");
+			File file = new File("./files/Data.txt"); // Relative path
+			if (file.exists()) {
+				System.out.println("File exists");
+				System.out.println(file.canRead());
+				System.out.println(file.canWrite());
+				System.out.println(file.canExecute());
+				
+				System.out.println(file.getName());
+				System.out.println(file.getAbsolutePath());
+				System.out.println(file.getPath());
+				System.out.println(file.isFile());
+			} else {
+				System.out.println("File does not exists");
+			}
 			FileReader fr = new FileReader(file);
 			int content;
 			while ((content=fr.read())!=-1) {
