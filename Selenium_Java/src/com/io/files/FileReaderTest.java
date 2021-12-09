@@ -23,7 +23,7 @@ public class FileReaderTest {
 				System.out.println(file.getPath());
 				System.out.println(file.isFile());
 			} else {
-				System.out.println("File does not exists");
+				System.out.println("File does not exists in the specified path");
 			}
 			FileReader fr = new FileReader(file);
 			int content;
