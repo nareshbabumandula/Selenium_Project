@@ -40,7 +40,6 @@ public class ReadExcelPOI {
 			}
 			System.out.println();
 		}
-			
 		wb.close();
 	}
 

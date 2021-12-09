@@ -28,7 +28,6 @@ public class WriteExcel {
 		}
 		wb.write();
 		wb.close();
-		
 	}
 
 	public static void main(String[] args) throws BiffException, IOException, WriteException {

@@ -38,8 +38,7 @@ public class ReadExcel {
 				System.out.println(celldata);
 			}
 		}
-		
-		
+				
 		wb.close();
 	}
 
