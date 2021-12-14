@@ -5,7 +5,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
-import graphql.language.FragmentDefinition;
+
 
 public class BufferedReaderTest {
 
@@ -14,7 +14,8 @@ public class BufferedReaderTest {
 		boolean bFlag=false;
 
 		try {
-			File file = new File("./files/Data.txt");
+			System.out.println("Project Path is : " + System.getenv("$USER_HOME$"));
+			File file = new File( "C:\\Users\\Admin\\Documents\\GitHub\\Selenium_Project\\Selenium_Java\\files\\Data.txt");
 			FileReader fr = new FileReader(file);
 			BufferedReader br= new BufferedReader(fr);
 			/*
