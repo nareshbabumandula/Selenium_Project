@@ -5,6 +5,10 @@ import java.util.Iterator;
 
 public class ArrayListTest {
 
+    /*
+     ArrayList maintains insertions order. It allows duplicate elements.It uses a dynamic array internally for storing
+     duplicate elements of different data types
+     */
     public static void main(String[] args){
         ArrayList<String> alist = new ArrayList<String>();
         ArrayList<String> arrlist = new ArrayList<String>();
@@ -32,6 +36,7 @@ public class ArrayListTest {
         System.out.println(alist);
         System.out.println(alist.isEmpty());
         System.out.println(alist.contains("Hemchand"));
+        alist.set(1, "Junaid");
 
         Iterator iter = alist.iterator();
 
@@ -40,9 +45,9 @@ public class ArrayListTest {
         }
 
 
-
-
-
-
+        // Applying lambda on an ArrayList
+        // Lambda expression syntax: (arguments list)->{body}
+        System.out.println("Lambda expression starts..!");
+        alist.forEach((ele)->System.out.println(ele));
     }
 }
