@@ -20,7 +20,10 @@ public class StackTest {
         stack.add("Himanshu");
         stack.add(null);
         stack.add(null);
+        stack.push("Junaid");
+        System.out.println("Head element is : " + stack.peek());
         System.out.println(stack);
+        stack.pop(); // LIFO Order
         stack.remove(0);
         System.out.println("Printing arraylist after deleting an object");
         System.out.println(stack);
