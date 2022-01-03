@@ -8,7 +8,16 @@ import java.sql.Statement;
 public class MySqlJdbcTest {
 
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
-
+        /**
+         * forName() The most common approach to register a driver is to use Java's Class. forName() method,
+         * to dynamically load the driver's class file into memory, which automatically registers it.
+         * This method is preferable because it allows you to make the driver registration configurable and portable.
+         * - When you have loaded a driver, it is available for making a connection with a DBMS.
+         * - It is used to create an instance of a driver and register it with the DriverManager.
+         * - Before connecting to the database we need to load a driver.
+         * - Whenever the code tries to open a connection we get a no driver available SQLException being thrown.
+         * - It is mostly caused by the driver not being in the class path or the value in the parameter is not correct.
+         */
         //Load the driver class
         Class.forName("com.mysql.cj.jdbc.Driver");
 
