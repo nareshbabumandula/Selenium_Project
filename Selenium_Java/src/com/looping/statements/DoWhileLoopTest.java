@@ -6,7 +6,7 @@ public class DoWhileLoopTest {
 		int i=0;
 		do {
 			System.out.println("Iteration is : "+i);
-			if(i==10) break;
+			if(i==5) break;
 			i++;
 		} while (i<10);
 	}
