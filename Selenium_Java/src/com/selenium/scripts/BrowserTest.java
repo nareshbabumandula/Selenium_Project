@@ -16,7 +16,7 @@ public class BrowserTest
 		String strProjectPath = System.getProperty("user.dir");
 		String strRootPath="";
 		if(strProjectPath.contains("Selenium_Java")){
-			strRootPath = strProjectPath.replaceAll("/Selenium_Java", "");
+			strRootPath = strProjectPath.replaceAll("\\Selenium_Java", "");
 		}
 		switch (BROWSER) {
 		case "chrome":
