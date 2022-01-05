@@ -14,6 +14,9 @@ public class BrowserTest
 	
 	public void launchBrowser(String BROWSER) throws InterruptedException {
 		String strProjectPath = System.getProperty("user.dir");
+		if(strProjectPath.contains("Selenium_Java")){
+			strProjectPath.replaceAll("Selenium_Java", "");
+		}
 		switch (BROWSER) {
 		case "chrome":
 			System.setProperty("webdriver.chrome.driver", strProjectPath + "/Selenium_Java/browsers/chromedriver.exe");
