@@ -39,9 +39,18 @@ public class BrowserTest
 			break;
 		}
 		driver.get("https://www.mycontactform.com/");
-
 		driver.findElement(By.id("user")).sendKeys("naresh");
-
+		System.out.println(driver.getWindowHandle());
+		System.out.println(driver.getWindowHandles());
+		System.out.println(driver.getCurrentUrl());
+		System.out.println(driver.getTitle());
+		System.out.println(driver.navigate().to("https://www.mycontactform.com/help.php");
+		System.out.println(driver.getCurrentUrl());
+		System.out.println(driver.getTitle());
+		driver.navigate().back();
+		driver.navigate().forward();
+		driver.navigate().refresh();
+		System.out.println(driver.getPageSource());
 		Thread.sleep(3000);
 		driver.quit(); // Terminate the browser
 	}
