@@ -13,18 +13,18 @@ public class BrowserTest
 	WebDriver driver;
 	
 	public void launchBrowser(String BROWSER) throws InterruptedException {
-		
+		String strProjectPath = System.getProperty("user.dir");
 		switch (BROWSER) {
 		case "chrome":
-			System.setProperty("webdriver.chrome.driver", "./browsers/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", strProjectPath + "/Selenium_Java/browsers/chromedriver.exe");
 			driver=new ChromeDriver();
 			break;
 		case "firefox":
-			System.setProperty("webdriver.gecko.driver", "./browsers/geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", strProjectPath + "/Selenium_Java/browsers/geckodriver.exe");
 			driver=new FirefoxDriver();
 			break;
 		case "ie":
-			System.setProperty("webdriver.ie.driver", "./browsers/IEDriverServer.exe");
+			System.setProperty("webdriver.ie.driver", strProjectPath + "/Selenium_Java/browsers/IEDriverServer.exe");
 			driver=new InternetExplorerDriver();
 			break;
 
