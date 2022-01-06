@@ -44,7 +44,7 @@ public class BrowserTest
 		System.out.println(driver.getWindowHandles());
 		System.out.println(driver.getCurrentUrl());
 		System.out.println(driver.getTitle());
-		System.out.println(driver.navigate().to("https://www.mycontactform.com/help.php");
+		driver.navigate().to("https://www.mycontactform.com/help.php");
 		System.out.println(driver.getCurrentUrl());
 		System.out.println(driver.getTitle());
 		driver.navigate().back();
@@ -58,12 +58,6 @@ public class BrowserTest
 	public static void main(String[] args) throws InterruptedException {
 		BrowserTest bt = new BrowserTest();
 		bt.launchBrowser("chrome");
-
-		bt.launchBrowser("firefox");
-		//BrowserTest bt = new BrowserTest();
-		//bt.launchBrowser("ie");
-
-
 	}
 
 }
