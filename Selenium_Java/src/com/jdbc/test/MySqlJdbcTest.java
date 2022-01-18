@@ -19,7 +19,7 @@ public class MySqlJdbcTest {
          * - It is mostly caused by the driver not being in the class path or the value in the parameter is not correct.
          */
         //Load the driver class
-        Class.forName("com.mysql.cj.jdbc.Driver");
+        //Class.forName("com.mysql.cj.jdbc.Driver");
 
         //Establish the Connection b/w JavaPgm to MySql
         Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/amazon","root","root");
