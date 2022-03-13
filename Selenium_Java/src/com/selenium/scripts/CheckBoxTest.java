@@ -18,7 +18,7 @@ public class CheckBoxTest
         String BROWSER = "chrome";
         String strRootPath = System.getProperty("user.dir");
         if(strRootPath.contains("Selenium_Java")){
-            strRootPath = strRootPath.replaceAll("Selenium_Java", "");
+            strRootPath = strRootPath.replaceAll("/Selenium_Java", "");
         }
         String strProjectPath = strRootPath + File.separator + "Selenium_Project";
 
