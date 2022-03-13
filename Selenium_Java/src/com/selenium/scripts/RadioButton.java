@@ -17,7 +17,9 @@ public class RadioButton
     public void  radioMethods() throws InterruptedException {
         String BROWSER = "chrome";
         String strRootPath = System.getProperty("user.dir");
-        String strProjectPath = strRootPath + File.separator + "Selenium_Project";
+        if(strRootPath.contains("Selenium_Java")){
+            strRootPath = strRootPath.replaceAll("\\Selenium_Java", "");
+        }
 
         System.setProperty("webdriver.chrome.driver", strRootPath + "/Selenium_Java/browsers/chromedriver.exe");
         driver = new ChromeDriver();

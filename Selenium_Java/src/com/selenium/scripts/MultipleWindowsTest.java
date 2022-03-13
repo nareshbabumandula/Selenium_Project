@@ -14,12 +14,9 @@ public class MultipleWindowsTest {
     WebDriver driver;
 
     public void multipleWindowsExample() throws InterruptedException {
-        String strProjectPath = System.getProperty("user.dir");
-        String strRootPath = "";
-        if (strProjectPath.contains("Selenium_Java")) {
-            strRootPath = strProjectPath.replaceAll("\\Selenium_Java", "");
-        } else {
-            strRootPath = System.getProperty("user.dir");
+        String strRootPath = System.getProperty("user.dir");
+        if(strRootPath.contains("Selenium_Java")){
+            strRootPath = strRootPath.replaceAll("\\Selenium_Java", "");
         }
         System.setProperty("webdriver.chrome.driver", strRootPath + "/Selenium_Java/browsers/chromedriver.exe");
         driver = new ChromeDriver();
