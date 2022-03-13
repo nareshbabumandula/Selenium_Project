@@ -15,7 +15,6 @@ public class ReadExcelPOI {
 		String strFilepath = "./files/Data.xls";
 		FileInputStream fis = new FileInputStream(strFilepath);
 		HSSFWorkbook wb = new HSSFWorkbook(fis); // Create workbook class object
-	
 		
 		HSSFSheet sh = wb.getSheet("Login"); // To access the Login sheet
 		HSSFSheet sh1 = wb.getSheet("Registration"); // To access the Registration sheet

@@ -8,19 +8,16 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
+import java.io.File;
+
 public class TextboxTest
 {
 	
 	WebDriver driver;
 	
 	public void textboxMethods(String BROWSER) throws InterruptedException {
-		String strProjectPath = System.getProperty("user.dir");
-		String strRootPath = "";
-		if (strProjectPath.contains("Selenium_Java")) {
-			strRootPath = strProjectPath.replaceAll("\\Selenium_Java", "");
-		} else {
-			strRootPath = System.getProperty("user.dir");
-		}
+		String strRootPath = System.getProperty("user.dir");
+		String strProjectPath = strRootPath + File.separator + "Selenium_Project";
 		System.setProperty("webdriver.chrome.driver", strRootPath + "/Selenium_Java/browsers/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("https://www.mycontactform.com/");

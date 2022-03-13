@@ -17,7 +17,7 @@ public class ImageTest
     public void  imageMethods() throws InterruptedException {
         String BROWSER = "chrome";
         String strRootPath = System.getProperty("user.dir");
-        String strProjectPath = strRootPath + File.separator + "Selenium_Java";
+        String strProjectPath = strRootPath + File.separator + "Selenium_Project";
 
         System.setProperty("webdriver.chrome.driver", strRootPath + "/Selenium_Java/browsers/chromedriver.exe");
         driver = new ChromeDriver();
