@@ -17,6 +17,9 @@ public class CheckBoxTest
     public void  checkboxMethods() throws InterruptedException {
         String BROWSER = "chrome";
         String strRootPath = System.getProperty("user.dir");
+        if(strRootPath.contains("Selenium_Java")){
+            strRootPath = strRootPath.replaceAll("Selenium_Java", "");
+        }
         String strProjectPath = strRootPath + File.separator + "Selenium_Project";
 
         System.setProperty("webdriver.chrome.driver", strRootPath + "/Selenium_Java/browsers/chromedriver.exe");
